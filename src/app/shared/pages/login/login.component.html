@@ -1,0 +1,17 @@
+<div class="min-h-screen flex items-center justify-center bg-gray-900">
+    <div class="overflow-x-auto px-4">
+        <form class="bg-gray-800 text-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full min-w-[320px] max-w-md">
+            <!-- Agregamos la clase 'mx-4' para dar margen a los lados del formulario -->
+            <div class="mb-4">
+                <shared-input [id]="'email'" [type]="'email'" [placeholder]="'Email'" (inputEmitter)="handleEmail($event)"></shared-input>
+            </div>
+            <div class="mb-6">
+                <shared-input [id]="'password'" [type]="'password'" [placeholder]="'Password'"></shared-input>
+            </div>
+            <div class="flex items-center justify-center">
+                <shared-button [textButton]="'Sign in'"></shared-button>
+            </div>
+            <h2>Pruebas: {{email}} </h2>
+        </form>
+    </div>
+</div>
